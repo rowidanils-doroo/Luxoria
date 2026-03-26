@@ -1,8 +1,10 @@
 <template>
-  <section class="home-services">
-    <h1>Our Services
-    <span class="line"></span>
-    </h1>
+  <!-- Section Title -->
+   <Section class="our-services">
+    <div class="section-header">
+      <h2 class="section-title">NEW ARRIVALS</h2>
+      <div class="title-line" />
+    </div>
 
     <div class="cards-container">
       <div class="div-card">
@@ -41,12 +43,14 @@ export default {};
 </script>
 
 <style scoped>
-.home-services {
-  padding: 60px 32px;
-  background-color: #f5f2ec;
+.our-services {
+  background: #f2f5f3;
+  padding: 72px 80px 88px;
+  font-family: 'EB Garamond', serif;
 }
 
-h1 {
+
+/* h1 {
   font-size: 2rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -61,6 +65,21 @@ h1 {
   flex: 1;
   height: 1px;
   background-color: #c9a84c;
+} */
+ .section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  color: #b8972a;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.title-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, #b8972a 0%, #d4af3760 60%, transparent 100%);
 }
 
 .cards-container {

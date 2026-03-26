@@ -15,6 +15,8 @@
 </template>
 
 <script>
+// import CategoryFilterHome from './CategoryFilterHome.vue';
+
 export default {};
 </script>
 
@@ -44,9 +46,17 @@ nav {
 
 
 nav a {
+  font-family: 'Cinzel', serif;
   text-decoration: none;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: #b8972a;
+   /* transform: scale(1.15); */
+   transition: transform 0.6s ease-in-out;
+  transform: translateY(-4px);
 }
 
 
